@@ -1,0 +1,29 @@
+MONEY SOLUTION FINANCE SERVICES — FIREBASE CONFIG ADDED
+
+Your supplied Firebase Web App config has been added to firebase-config.js.
+Firebase is NOT fully activated until the steps below are completed in the Firebase Console.
+
+NEXT STEPS
+1. Open https://console.firebase.google.com/ and select project money-salutations-fainence.
+2. Authentication > Sign-in method: enable Email/Password.
+3. Authentication > Users: create your admin login user.
+4. Firestore Database: create a database.
+5. Firestore > Rules: publish the firestore.rules file included in this project.
+6. Give the admin user the trusted custom claim { "admin": true } using a trusted server/Admin SDK or a secured Cloud Function. Do NOT set this from browser JavaScript. A normal email/password user is not automatically an admin.
+7. Upload the complete website folder to HTTPS hosting.
+8. Configure Firebase App Check and suitable API-key restrictions before public launch.
+
+IMPORTANT SECURITY NOTES
+- The Firebase Web App config is intended for client-side use. It is not a service-account private key.
+- Never share service-account JSON, private keys, passwords or OTPs.
+- Firestore rules deny public reads/updates/deletes; public visitors can submit validated inquiries only.
+- Until Authentication, Firestore, rules, admin custom claim and HTTPS hosting are configured, the admin dashboard will not be fully operational.
+- The customer inquiry form can still open WhatsApp; inquiries will not be stored in Firestore until the Firebase setup is completed.
+
+FILES
+- index.html: customer-facing five-page website/mobile PWA
+- admin/index.html and admin/admin.js: admin login and dashboard
+- firebase-config.js: your supplied Firebase Web App config
+- firebase-public.js: public inquiry save function
+- firestore.rules: Firestore security rules
+- sw.js and manifest.webmanifest: installable PWA support
