@@ -1,0 +1,8 @@
+{
+  "name": "Money Solution Finance Services",
+  "short_name": "Money Solution",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fb",
+  "theme_color": "#073b72"
+}
